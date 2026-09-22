@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lab 4</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Personal Information</h2>
+            <fieldset>
+                <legend>Profile Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label>Languages Known:</label><br>
+                <input type="checkbox" id="english" name="languages" value="english">
+                <label for="english">English</label><br>
+                <input type="checkbox" id="spanish" name="languages" value="spanish">
+                <label for="spanish">Spanish</label><br>
+                <input type="checkbox" id="french" name="languages" value="french">
+                <label for="french">French</label><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select><br><br>
+            </fieldset>
+            <h2>College Subjects</h2>
+            <fieldset>
+                <legend>Subjects Information</legend>
+                <label for="subjects">College Subjects:</label><br>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="computerScience">Computer Science</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="english">English</option>
+                </select><br><br>
+                <label for="interest">Rate Interest in Computer Science:</label>
+                <input type="range" id="interest" name="interest" min="0" max="10"><br><br>
+            </fieldset>
+
+            <h2>Skill Assessment</h2>
+            <fieldset>
+                <legend>Skills Information</legend>
+                <label for="skills">Describe Skills:</label><br>
+                <textarea id="skills" name="skills" rows="4" cols="50"></textarea><br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume"><br><br>
+
+                <label for="favoriteColor">Pick Favorite Color:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor"><br><br>
+
+                <label for="studyTime">Preferred Study Time:</label>
+                <input type="time" id="studyTime" name="studyTime"><br><br>
+
+                <input type="submit" value="Submit Survey">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
