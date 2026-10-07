@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts Level 4 Example with Roboto</title>
+    <style>
+        /* Імпорт шрифту Roboto через @font-face з Google Fonts */
+        @font-face {
+            font-family: 'Roboto';
+            src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            /* Показує fallback-шрифт, поки основний шрифт не завантажено */
+        }
+
+        /* Використання шрифту з власними налаштуваннями */
+        .font-example {
+            font-family: 'Roboto', Arial, sans-serif;
+            /* Пріоритет шрифту Roboto*/
+            font-size: 20px;
+            /* Розмір шрифту */
+            font-weight: 600;
+            /* Напівжирний стиль */
+            font-style: italic;
+            /* Курсив */
+            font-stretch: expanded;
+            /* Розширений шрифт */
+            font-variant: small-caps;
+            /* Малі капітелі */
+            font-feature-settings: 'liga' 1;
+            /* Включення лігатур */
+            line-height: 1.5;
+            /* Висота рядка */
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Налаштування варіативного шрифту */
+        .variable-font-example {
+            font-family: 'Roboto', sans-serif;
+            font-variation-settings: 'wght' 700, 'wdth' 150;
+            /* Змінні властивості шрифту: товщина та ширина */
+
+            font-size: 24px;
+            font-display: fallback;
+            /* Шрифт завантажується з fallback */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="font-example">
+        <p>Це приклад тексту з використанням шрифту Roboto та різних
+            властивостей модуля CSS Fonts Level 4.</p>
+    </div>
+
+    <div class="variable-font-example">
+        <p>Це приклад з варіативним шрифтом Roboto, де можна змінювати товщину і ширину шрифту динамічно.</p>
+    </div>
+
+</body>
+
+</html>

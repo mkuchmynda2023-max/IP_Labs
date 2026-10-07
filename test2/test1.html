@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Level 5 Example</title>
+    <style>
+        .color-example {
+            /* Визначення кольору тексту за допомогою rgb() */
+            color: rgb(255, 69, 0);
+            /* Яскравий оранжевий */
+
+            /* Фоновий колір за допомогою hex */
+            background-color: #add8e6;
+            /* Світло-блакитний */
+
+            /* Прозорість елемента */
+            opacity: 0.9;
+
+            /* Використання hsla() для фонової рамки */
+            border: 5px solid hsla(120, 100%, 50%, 0.7);
+            /* Напівпрозора зелена
+рамка */
+
+            /* Відступи для кращого візуального відображення */
+            padding: 20px;
+            margin: 20px;
+
+            /* Використання color-mix() для градієнтного кольору тла */
+            background-image: linear-gradient(to right,
+                    color-mix(in srgb, rgb(255, 69, 0) 50%, rgb(255, 165, 0) 50%));
+        }
+
+        .text-contrast {
+            /* Використання функції color-contrast() для вибору кращого кольору
+тексту */
+
+            color: color-contrast(#add8e6 vs white, black);
+            /* Чорний або білий,
+залежно від контрасту */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-example">
+        <p>Це приклад використання нових можливостей CSS Color Level 5.</p>
+    </div>
+
+    <div class="text-contrast">
+        <p>Цей текст автоматично підбирається для найкращого контрасту з фоном.</p>
+    </div>
+</body>
+
+</html>
