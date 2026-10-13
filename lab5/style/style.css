@@ -1,8 +1,30 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
+body {
+    font-size: 1.6rem;
+}
+
+.fontyourface {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAX-k2Qn.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+}
+
 
 
 #logos_container {
@@ -19,23 +41,10 @@
     margin-left: auto;
     width: 100%;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
 
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
+.container {
         width: 1170px;
     }
-}
 
 .row {
     display: flex;
