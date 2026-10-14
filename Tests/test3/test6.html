@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Multicolumn Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .multicolumn {
+            column-count: 3;
+            /* Кількість колонок */
+            column-gap: 20px;
+            /* Відстань між колонками */
+            column-rule: 2px solid #ccc;
+            /* Роздільник між колонками */
+        }
+
+        h2 {
+            break-inside: avoid;
+            /* Уникнення розриву заголовків між
+колонками */
+        }
+
+        p {
+            margin: 0 0 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Multicolumn Layout Example</h1>
+    <div class="multicolumn">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            ut augue ut erat tristique fringilla. Nullam dictum dolor ut arcu
+            bibendum, vel hendrerit eros placerat.</p>
+
+        <h2>Column 2</h2>
+        <p>Integer fermentum, lacus nec pellentesque consequat, sapien
+            velit eleifend ligula, a sollicitudin lacus eros et nunc. Nulla vehicula
+            libero at justo dictum hendrerit.</p>
+
+        <h2>Column 3</h2>
+        <p>Donec id felis id sem dignissim aliquet. Vivamus tempor, nisl
+            ut varius mollis, eros urna viverra urna, eu gravida eros nulla sit amet
+            neque.</p>
+    </div>
+</body>
+
+</html>
