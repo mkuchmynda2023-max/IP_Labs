@@ -6,12 +6,6 @@ body {
     font-size: 1.6rem;
 }
 
-.fontyourface {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-}
-
 header {
     display: block;
     unicode-bidi: isolate;
@@ -29,19 +23,12 @@ header {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
-}
-
-.container {
     width: 1170px;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .col-xs-4 {
@@ -62,14 +49,4 @@ img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-}
-
-
-.clearfix::before, .clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
 }
