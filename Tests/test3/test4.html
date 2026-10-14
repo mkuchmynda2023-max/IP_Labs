@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearing Box with flow-root</title>
+    <style>
+        .parent {
+            display: flow-root;
+            /* Створення нового контексту форматування */
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .box {
+            width: 45%;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 5%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box">Бокс 1</div>
+        <div class="box">Бокс 2</div>
+    </div>
+
+    <p>Батьківський елемент із властивістю <code>display: flow-root</code>
+        автоматично враховує плаваючі елементи всередині себе.</p>
+</body>
+
+</html>

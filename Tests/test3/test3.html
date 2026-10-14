@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearing Floats</title>
+    <style>
+        .box {
+            width: 30%;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 2%;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Бокс 1</div>
+    <div class="box">Бокс 2</div>
+    <div class="box">Бокс 3</div>
+
+    <!-- Очищення обтікання -->
+    <div class="clearfix"></div>
+
+    <p>Цей текст не "провалюється" під плаваючі елементи завдяки властивості
+        <code>clear: both;</code>.
+    </p>
+</body>
+
+</html>
