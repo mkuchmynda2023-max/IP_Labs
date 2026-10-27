@@ -1,0 +1,13 @@
+.con {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    /* flex-wrap: wrap; */
+}
+.img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex-basis: 150px; */
+}
