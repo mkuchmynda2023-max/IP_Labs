@@ -9,7 +9,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+    "wdth" 100;
 }
 
 .grid {
@@ -59,13 +59,37 @@ body {
     background-color: #F6F6F6;
 }
 
-header {
+.header {
     text-align: center;
     font-size: 28px;
     color: #0076A8;
     font-weight: 350;
     margin-bottom: 20px;
 }
-header a {
+.header a {
     border-bottom: 2px solid #0076A8;
+}
+
+.hero {
+    background-image: url("../img/hero_background.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.hero a {
+    display: block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: 450;
+    padding: 20px 0;
+}
+.hero .shadow {
+    background: linear-gradient(180deg, rgba(46, 49, 146, 0), rgba(46, 49, 146, 1));
+    height: 200px;
+    padding: 180px 0 0 0;
+}
+.hero .space {
+    height: 200px;
 }
