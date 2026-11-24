@@ -1,0 +1,100 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 1150px;
+    margin: 0 auto;
+    gap: 20px;
+
+    .news_block {
+        position: relative;
+        width: 265px;
+        min-height: 300px;
+        height: auto;
+
+        .img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-bottom: 3px solid #757575;
+                background-color: #F6F6F6;
+            }
+        }
+
+        .date {
+            position: absolute;
+            left: 16px;
+            top: 142px;
+            background-color: #757575;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            width: 160px;
+            height: 18px;
+            font-size: 13px;
+            font-weight: 400;
+            align-items: center;
+        }
+
+        .text {
+            color: #0076A8;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 20px;
+            background-color: #F6F6F6;
+        }
+    }
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    color: #0076A8;
+    font-weight: 350;
+    margin-bottom: 20px;
+
+    a {
+        border-bottom: 2px solid #0076A8;
+    }
+}
+
+.hero {
+    background-image: url("../img/hero_background.png");
+    background-size: cover;
+    width: 100%;
+
+    .shadow {
+        background: linear-gradient(180deg, rgba(46, 49, 146, 0), rgba(46, 49, 146, 1));
+        height: 200px;
+        padding: 180px 0 0 0;
+
+        a {
+            display: block;
+            text-align: center;
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: 450;
+            padding: 20px 0;
+        }
+    }
+
+    .space {
+        height: 200px;
+    }
+}
