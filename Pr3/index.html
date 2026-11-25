@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trivia — Daily Knowledge Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Site navigation">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>World Trivia</h1>
+            <p>Discover unusual facts from around the world and challenge yourself with short daily quizzes. Pick a category, compare scores with other players, and learn something new every morning.</p>
+        </section>
+
+        <section id="trivia">
+            <h2>Trivia</h2>
+            <article class="fact-row">
+                <img src="img/honey.jpg" alt="">
+                <div class="fact-text">
+                    <h3>Honey Never Spoils</h3>
+                    <p>Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still completely edible due to its low moisture and natural acidity.</p>
+                </div>
+            </article>
+            <article class="fact-row">
+                <img src="img/eiffel.jpg" alt="">
+                <div class="fact-text">
+                    <h3>A Growing Tower</h3>
+                    <p>Because iron expands in the heat, the Eiffel Tower can grow up to 15 centimeters taller during hot summer days in Paris.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul class="cat-list">
+                <li><a href="#categories">World History</a></li>
+                <li><a href="#categories">Nature &amp; Wildlife</a></li>
+                <li><a href="#categories">Physics</a></li>
+                <li><a href="#categories">Inventions</a></li>
+                <li><a href="#categories">Art &amp; Culture</a></li>
+                <li><a href="#categories">Sports</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Maksym</td>
+                        <td>995</td>
+                        <td>Ukraine</td>
+                        <td>Inventions</td>
+                        <td>2025-05-01</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Elena</td>
+                        <td>940</td>
+                        <td>Czechia</td>
+                        <td>World History</td>
+                        <td>2025-05-02</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Daniel</td>
+                        <td>905</td>
+                        <td>Canada</td>
+                        <td>Physics</td>
+                        <td>2025-05-03</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe</h2>
+            <p>Sign up to receive one curated riddle and trivia question every day.</p>
+            <button type="button" class="btn-subscribe" aria-label="Subscribe to Puzzle of the Day">
+                Puzzle of the Day <span class="visually-hidden">(daily email subscription)</span>
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have feedback about a quiz or found an error? Write to our editorial team.</p>
+            <form action="#" method="post" class="contact-form">
+                <label for="cname">Your Name:</label>
+                <input type="text" id="cname" name="cname" required>
+
+                <label for="cemail">Your Email:</label>
+                <input type="email" id="cemail" name="cemail" required>
+
+                <label for="cmsg">Your Message:</label>
+                <textarea id="cmsg" name="cmsg" rows="5" required></textarea>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>World Trivia &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
